@@ -1,3 +1,6 @@
+# Nota
+Apenas adaptei o bot para o nosso idioma. Sintam-se livres para adicionar novos exercícios.
+
 # slackbot-workout
 A fun hack that gets Slackbot to force your teammates to work out!
 

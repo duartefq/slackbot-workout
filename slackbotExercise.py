@@ -153,7 +153,7 @@ def selectExerciseAndStartTime(bot):
     exercise = selectExercise(bot)
 
     # Announcement String of next lottery time
-    lottery_announcement = "NEXT LOTTERY FOR " + exercise["name"].upper() + " IS IN " + str(minute_interval) + (" MINUTES" if minute_interval != 1 else " MINUTE")
+    lottery_announcement = "PROXIMO SORTEIO PARA " + exercise["name"].upper() + " EM " + str(minute_interval) + (" MINUTOS" if minute_interval != 1 else " MINUTO")
 
     # Announce the exercise to the thread
     if not bot.debug:
@@ -192,7 +192,7 @@ def assignExercise(bot, exercise):
     # Select number of reps
     exercise_reps = random.randrange(exercise["minReps"], exercise["maxReps"]+1)
 
-    winner_announcement = str(exercise_reps) + " " + str(exercise["units"]) + " " + exercise["name"] + " RIGHT NOW "
+    winner_announcement = str(exercise_reps) + " " + str(exercise["units"]).upper() + " " + exercise["name"].upper() + " AGORA "
 
     # EVERYBODY
     if random.random() < bot.group_callout_chance:
@@ -236,7 +236,7 @@ def saveUsers(bot):
     # Write to the command console today's breakdown
     s = "```\n"
     #s += "Username\tAssigned\tComplete\tPercent
-    s += "Username".ljust(15)
+    s += "Usuario".ljust(15)
     for exercise in bot.exercises:
         s += exercise["name"] + "  "
     s += "\n---------------------------------------------------------------\n"

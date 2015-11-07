@@ -25,38 +25,31 @@
   "exercises": [
     {
       "id": 0,
-      "name": "pushups",
+      "name": "flexoes",
       "minReps": 15,
       "maxReps": 20,
-      "units": "rep"
+      "units": ""
     },
     {
       "id": 1,
-      "name": "planks",
+      "name": "pranchas",
       "minReps": 40,
       "maxReps": 60,
-      "units": "second"
+      "units": "segundos de"
     },
     {
       "id": 2,
-      "name": "wall sit",
+      "name": "alongamentos",
       "minReps": 40,
       "maxReps": 50,
-      "units": "second"
+      "units": "segundos de"
     },
     {
       "id": 3,
-      "name": "chair dips",
+      "name": "agachamentos",
       "minReps": 15,
       "maxReps": 30,
-      "units": "rep"
-    },
-    {
-      "id": 4,
-      "name": "calf raises",
-      "minReps": 20,
-      "maxReps": 30,
-      "units": "rep"
+      "units": ""
     }
   ]
 }
